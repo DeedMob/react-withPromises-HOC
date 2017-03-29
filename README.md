@@ -1,5 +1,6 @@
 # react-withPromises-HOC
-This is a way to invoke promises in a HOC and optionally pass down the resulting values as props
+This is a way to invoke promises in a HOC and optionally pass down the resulting values as props.
+Created out of frustration with `redux-connect` blocking render, and not wanting to pollute my components internal methods with the business logic of making async requests when appropriate. Used in conjunction with `requireProps` HOC can be quite useful to block render until certain props are present, and update data when conditions change
 
 ## Usage
 
