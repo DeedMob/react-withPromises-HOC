@@ -20,3 +20,21 @@ withPromises([
 ])(AppPage);
 
 ```
+
+
+## Some Types
+```js
+type option = {
+  promise: Promise,
+  shouldUpdate: (props, nextProps) => boolean,
+  key: string
+}
+
+withPromises: (Array<option>) => (Component) => (Component)
+```
+#### default Values: 
+```js
+shouldUpdate: () => false
+key: undefined
+```
+
