@@ -30,7 +30,7 @@ type option = {
   key: string
 }
 
-withPromises: (Array<option>) => (Component) => (Component)
+withPromises: Array<option> => Component => Component
 ```
 #### default Values: 
 ```js
